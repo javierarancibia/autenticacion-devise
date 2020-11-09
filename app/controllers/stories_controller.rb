@@ -18,6 +18,10 @@ class StoriesController < ApplicationController
     @story = Story.new
   end
 
+  def user_stories
+    @stories = Story.all
+  end
+
   # GET /stories/1/edit
   def edit
   end
